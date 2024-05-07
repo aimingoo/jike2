@@ -2,7 +2,7 @@ function getInputSomething() {
     return '1341534';
 }
 
-function loadFromDatabase(id: number) {
+function loadFromDatabase(id) {
     return {
         id,
         name: '张三',
