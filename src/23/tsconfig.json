@@ -1,0 +1,8 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "moduleDetection": "force",
+        "strict": true,
+        "noErrorTruncation": true,  // @see https://stackoverflow.com/questions/53113031/
+    }
+}
