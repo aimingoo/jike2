@@ -1,0 +1,4 @@
+{
+    "typescript.tsdk": "node_modules/typescript/lib",
+    "typescript.tsserver.nodePath": "/Users/aimingoo/.nvm/versions/node/v18.18.2/bin/node"
+}
