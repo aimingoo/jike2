@@ -1,0 +1,16 @@
+NOTE1：注意“有没有要处理的.ts文件”也是很关键的！
+-----
+在使用 --build 时，如果files列表不为空，可能会带来很复杂的处理逻辑。包括：
+
+1. 目标项目必须配置 composite 为 true
+
+2. 目标项目中的模块必须被包含在 include 配置列表中（Amibent files则不必须）
+
+3. prepend是过时的特性，会导致 ignoreDeprecations 必须配置为"5.0"
+
+
+NOTE2：
+-----
+# clear emitted files
+> find . ! -name 'rollup.config.js' ! -path '*/node_modules/*' \( -name '*.js' -or -name '*.d.ts' -or -name '*.map' -or -name '*.tsbuildinfo' -or -empty \)  -print -delete
+

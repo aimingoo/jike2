@@ -1,0 +1,16 @@
+{
+  "name": "38",
+  "version": "1.0.0",
+  "description": "",
+  "main": "t.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typedoc": "^0.25.13",
+    "typescript": "^5.4.5"
+  }
+}
