@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "ESNext",
+        "target": "ESNext",
+        "lib": ["ES2021"],
+        "moduleResolution": "Node",
+        "moduleDetection": "force",
+        "declaration": true,
+        "jsx": "react",
+        // "allowImportingTsExtensions": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true
+    },
+    "exclude": [
+        "t?.ts",
+        "node_modules",
+        "**/node_modules/*"
+    ]
+}
