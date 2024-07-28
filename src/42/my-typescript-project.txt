@@ -1,0 +1,2 @@
+
+> @workspace /new typescript的基架代码，并安装lint、prettier、rollup等工具并配置它们

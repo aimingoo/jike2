@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "dist",
+    // "rootDir": "./3rd",
+    "rootDir": "./",
+    "rootDirs": [
+      "./src",
+      "./tests"
+    ],
+    "strict": true,
+    "esModuleInterop": true,
+    "plugins": [
+      {
+        "name": "ts-sql-plugin",
+      }
+    ],
+  },
+  "include": [
+    "**/*.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
+}
