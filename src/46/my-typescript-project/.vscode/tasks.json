@@ -1,0 +1,80 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    // 示例1：使用定制shell模式（`type = shell`）来编译ts文件
+    // {
+    //   "label": "tsc: build - tsconfig.json",
+    //   "type": "shell",
+    //   "command": "npx",
+    //   "args": [
+    //     "tsc",
+    //     "-p",
+    //     "tsconfig.json"
+    //   ],
+    //   "problemMatcher": "$tsc",
+    //   "group": {
+    //     "kind": "build",
+    //     "isDefault": true
+    //   },
+    //   "presentation": {
+    //     "reveal": "always",
+    //     "panel": "shared"
+    //   }
+    // },
+
+    // 示例2：使用内置ts模式（`type = typescript`）来编译ts文件
+    { 
+      "type": "typescript",
+      "tsconfig": "tsconfig.json",
+      "problemMatcher": [
+        "$tsc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      // "options": {
+      //   "shell": {
+      //     "executable": "c:/babun/.babun/cygwin/bin/bash.exe", // 指向你的 bash 可执行文件的路径
+      //     "args": ["-c"]
+      //   }
+      // },
+      "label": "tsc: build - tsconfig.json",
+    },
+    
+
+    {
+      "label": "Build",
+      "type": "shell",
+      "command": "tsc",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": [
+        "$tsc"
+      ]
+    },
+
+    {
+      "label": "Test",
+      "type": "shell",
+      "command": "npm test",
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "shared",
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

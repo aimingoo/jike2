@@ -1,0 +1,47 @@
+{
+  "name": "my-typescript-project",
+  "version": "1.0.0",
+  "description": "A TypeScript project",
+
+  "main": "dist/index.js",
+  "module": "dist/index-esm.mjs",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "xxx": "bin/index-cli.js"
+  },
+  "scripts": {
+    "start": "node dist/index.js",
+
+    "preinstall": "echo 'preinstall'",
+
+    ":test": "注意：test 没有预定义行为",
+    "test": "jest",
+
+    "t": "cat dist/index.js",
+
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "prettier": "prettier --write ."
+  },
+
+  "devDependencies": {
+    "@types/node": "^16.7.13",
+    "eslint": "^7.32.0",
+    "jest": "^27.2.5",
+    "prettier": "^2.4.1",
+    "ts-jest": "^27.0.5",
+    "typescript": "^5.4.5"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+
+  "imports": {
+    "--note": "这里的路径是相对于 package.json 的，并且必须显式指明包的入口文件（而不是目录）",
+    "#aaa": "./modules/aaa/index.js"
+  },
+  "files": [
+    "dist"
+  ]
+}

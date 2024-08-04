@@ -1,0 +1,28 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+        "module": "ES6",
+        "moduleResolution": "Node",
+        "moduleDetection": "force", // 对 none/amd/system 打包行为无意义
+
+        // "module": "ESNext",
+        // "moduleResolution": "Node",
+        "outDir": "./dist",
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+
+        "declaration": true,
+        // "baseUrl": "",  // "", './', or string of baseUrl
+        "paths": {
+            "mod": [
+                "./mod.ts",
+                "./lib/mod.ts",  // a module file, or a directory with an index.ts, or a package directory with a package.json
+            ]
+        }
+    },
+    "exclude": [
+        "dist",
+        "node_modules",
+        "**/node_modules/*"
+    ]
+}

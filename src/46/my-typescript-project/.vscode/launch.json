@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    // 示例1：“猜测”模式（缺省创建的Node.js配置，不建议在ts中直接使用）
+    // {
+    //   "type": "node",
+    //   "request": "launch",
+    //   "name": "Launch Program",
+    //   "program": "${workspaceFolder}/src/index.ts",
+    //  },
+
+    // 示例2：一般配置
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Launch Program",
+      "program": "${workspaceFolder}/src/index.ts",
+      
+      // 指定由tsc编译生成的js文件所在的位置，缺省会从typescript文件的位置推断（例如outDir配置项），或与.ts相同目录
+      //  NOTE：缺省.js.map与.js生成在同一目录（除非使用了inlineSourceMap导致它被内联到.js文件中）
+      "outFiles": ["${workspaceFolder}/dist/**/*.js"],  
+      "sourceMaps": true,
+
+      "preLaunchTask": "tsc: build - tsconfig.json"
+    },
+
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Debug Tests",
+      "program": "${workspaceFolder}/node_modules/jest/bin/jest.js",
+      "args": [
+        "--runInBand",
+        "--config",
+        "${workspaceFolder}/jest.config.js",
+        "--testPathPattern",
+        "${workspaceFolder}/test"
+      ]
+    }
+  ]
+}

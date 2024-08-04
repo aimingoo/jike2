@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "mocha": "^10.5.2",
+    "my-typescript-project": "file:my-typescript-project"
+  }
+}

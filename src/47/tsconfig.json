@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+
+    "module": "none",
+    "sourceMap": true,
+    "outDir": "./build/js",
+    "inlineSources": true,
+
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "build"]
+}
