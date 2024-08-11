@@ -1,0 +1,56 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "outDir": "dist",
+
+    "allowJs": true,
+    // "maxNodeModuleJsDepth": 0,
+    // "checkJs": true,  // or add `@ts-check` comment in js file
+
+    // ---------- @see ./1/t.ts ----------
+    // "strict": true,
+    "alwaysStrict": true,
+    "noImplicitAny": false,
+    "noImplicitThis": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictPropertyInitialization": false,
+    "useUnknownInCatchVariables": true,
+
+    // ---------- @see ./2/t.ts ----------
+    // "moduleDetection": "force",
+    "isolatedModules": false,  // 检查每个模块是否能作为孤立模块编译（仅在.ts是模块时有意义，“孤立”是指类型信息与实体隔离）。缺省false。
+
+    // ---------- @see ./3/t.ts ----------
+    "verbatimModuleSyntax": false,
+    // "ignoreDeprecations": "5.0",
+    // "importsNotUsedAsValues": "error",  // 从模块导入的内容不会被用作值时，抛出错误。缺省"remove"。
+    // "preserveValueImports": true,  // 保留从模块导入的内容，即使它们不会被用作值。缺省false。
+
+    // ---------- @see jike/12/t.ts ----------
+    // ---------- @see ./4/t.ts ----------
+    "preserveConstEnums": false,  // 在生成代码中保留const枚举（编译为一个对象），缺省时const enum只在.js代码中引用枚举值。缺省false。
+
+    // ---------- @see jike/23/tsconfig.json ----------
+    "noErrorTruncation": true,
+
+    // ---------- @see ./index.ts ----------
+    "diagnostics": true,
+    // "extendedDiagnostics": true,
+    "explainFiles": true,
+    // "skipDefaultLibCheck": true,  // 表示编译器会在编译过程中对默认库文件进行类型检查。缺省是false。
+    "skipLibCheck": true,  // 表示编译器会在编译过程中对库文件进行类型检查。缺省是false。
+    "noLib": true,
+    // "lib": ["ES2015"],
+    // "moduleResolution": "Classic",  // 不影响types的resolve过程
+    "typeRoots": ["./node_modules/@types"], // 不影响lib中的.d.ts的resolve过程
+  },
+  "exclude": [
+    // "index.ts",
+    "dist/**/*",
+    "lib/**/*",
+  ],
+}

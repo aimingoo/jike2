@@ -1,0 +1,2 @@
+interface CallableFunction {}
+interface NewableFunction {}

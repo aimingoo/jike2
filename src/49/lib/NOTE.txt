@@ -1,0 +1,15 @@
+Download from
+   https://github.com/TypeStrong/ntypescript/bin/lib.d.ts
+
+Minimum lib.d.ts from
+   https://github.com/microsoft/TypeScript/blob/main/src/services/transpile.ts
+
+
+- How can I replace the type of self in TypeScript?
+@see https://stackoverflow.com/a/31696608
+
+
+- Compile .ts with --noLib on command line 
+@see https://github.com/microsoft/TypeScript/issues/3930
+> tsc --noLib node_modules/typescript/bin/lib.core.d.ts foo.ts bar.ts
+
