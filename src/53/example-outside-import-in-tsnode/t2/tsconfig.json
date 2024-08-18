@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    // compile to ES6 when using tsc to make default output
+    "module": "ES6",
+    "moduleResolution": "Node",
+    "outDir": "./dist",
+    "strict": true,
+  },
+  "ts-node": {
+    "compilerOptions": {
+      // support import directory in ts-node, will transpile to CommonJS
+      "module": "CommonJS",
+    },
+  }
+}
