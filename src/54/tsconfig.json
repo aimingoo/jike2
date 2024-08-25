@@ -1,0 +1,30 @@
+{
+    "compilerOptions": {
+        "target": "ES2020",
+
+        /* NOTE: 如果在Node.js 中使用 ESM，需要考虑使用特殊的模块装载器，例如：
+           # @see https://www.npmjs.com/package/specifier-resolution-node Or,
+           > node --loader ts-node/esm --experimental-specifier-resolution=node ...
+           # (Or, in NodeJS 16~18, @see "nodeJS v19 drops support ..." at https://stackoverflow.com/q/74660824)
+           > node --es-module-specifier-resolution=node ...
+        */
+        "module": "ES6",
+        // "module": "CommonJS",
+
+        "moduleResolution": "Node",
+        "outDir": "./dist",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "exclude": [
+        "js",
+        "dist",
+        "**/node_modules/**/*",
+    ],
+    "ts-node": { // `--loader ...` at command line, See the previous description
+        "esm": true,
+        "experimentalSpecifierResolution": "node",
+    }
+}

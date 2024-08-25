@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "none",
+    "moduleResolution": "node",
+    "declaration": true,
+    // "emitDeclarationOnly": true,
+    "outFile": "./lib/globalDefs.js",
+    "strict": true,
+    "skipLibCheck": true,
+    "listFiles": true,
+  },
+  "exclude": [
+    "./dist",
+    "./lib",
+    "**/node_modules/**/*"
+  ]
+}

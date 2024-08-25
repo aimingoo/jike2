@@ -1,0 +1,9 @@
+{
+  "name": "55",
+  "type": "module",
+  "typings": "index.d.ts",
+  "devDependencies": {
+    "@types/node": "^20.14.11",
+    "tsup": "^8.1.1"
+  }
+}
