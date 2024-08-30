@@ -12,5 +12,5 @@ type NotAnyNever<T> = false extends IsAny<T> ? Not<IsNever<T>> : false;
 
 // fixed @see 33/t.ts
 type IsUnion<T> = NotAnyNever<T> extends true
-   ? T[] extends (infer U)[] ? T extends infer t ? ([U] extends [t] ? false : true) : never : never
+   ? T[] extends (infer U)[] ? Not<IsNever<T extends infer t ? ([U] extends [t] ? false : true) : never>> : never
    : false

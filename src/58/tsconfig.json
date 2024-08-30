@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "es6",
+    "moduleResolution": "classic",
+    "outDir": "./dist",
+    // "strict": true,
+    // "strictNullChecks": true,  // v2.0.0+
+    // "strictFunctionTypes": true,
+    "skipDefaultLibCheck": true
+  },
+  "files": [
+    "t2.ts"
+  ]
+}

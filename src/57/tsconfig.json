@@ -1,0 +1,6 @@
+{
+    "compilerOptions": {
+        "moduleDetection": "force",
+        "noImplicitThis": true,
+    }
+}
