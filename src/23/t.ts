@@ -75,7 +75,7 @@ type MapTX<Source, T> = {
 }
 type T72 = MapTX<Singles, T2>; // ObjectToTuple<>
 
-type MapMartix<Source> = {
+type MapMatrix<Source> = {
     [k in keyof Source]: k extends `${number}`
         ? MapTX<Source, {
             [i in Extract<keyof Source, `${number}`>]:
@@ -83,4 +83,4 @@ type MapMartix<Source> = {
           }>
         : Source[k]
 }
-type T8 = MapMartix<Singles>;
+type T8 = MapMatrix<Singles>;
