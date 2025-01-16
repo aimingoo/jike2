@@ -19,7 +19,7 @@ let aw = new ArrayWidget<number>();
 aw.value = [1, 2, 3];
 
 let aw2 = new ArrayWidget2<number[]>();
-aw.value = [1, 2, 3];
+aw2.value = [1, 2, 3];
 
 // 1) 复杂的extends ...子句
 //  - @see TypeScript/tests/cases/compiler/...
